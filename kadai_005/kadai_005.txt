@@ -1,0 +1,37 @@
+dicea@Ludid:/mnt/c/Users/dicea$ mkdir git_challenge
+dicea@Ludid:/mnt/c/Users/dicea$ cd git_challenge
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git init
+Initialized empty Git repository in /mnt/c/Users/dicea/git_challenge/.git/
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ touch hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ echo "Hello,world!" >> hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git add hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git commit -m "hello_world.txtを追加"
+[main (root-commit) cd91aad] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git log
+commit cd91aad0e416f1233711aec44b23e71f02538ed5 (HEAD -> main)
+Author: GaraQqQ <dice.ak@gmail.com>
+Date:   Sat May 17 17:49:13 2025 +0900
+
+    hello_world.txtを追加
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ echo "こんにちは、世界！" >> hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git add hello_world.txt
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git commit -m "日本語訳を追記"
+[main 94b7bcf] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ git log
+commit 94b7bcf716706512973376cf1b13dfd99a5fdaec (HEAD -> main)
+Author: GaraQqQ <dice.ak@gmail.com>
+Date:   Sat May 17 18:01:36 2025 +0900
+
+    日本語訳を追記
+
+commit cd91aad0e416f1233711aec44b23e71f02538ed5
+Author: GaraQqQ <dice.ak@gmail.com>
+Date:   Sat May 17 17:49:13 2025 +0900
+
+    hello_world.txtを追加
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ mkdir kadai_005
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge$ cd kadai_005
+dicea@Ludid:/mnt/c/Users/dicea/git_challenge/kadai_005$ touch kadai_005.txt
